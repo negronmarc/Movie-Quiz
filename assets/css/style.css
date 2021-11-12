@@ -1,3 +1,57 @@
 .hide {
     display:none
 }
+
+header {
+    background-color: #CBB434;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.scores {
+    display: inline-flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+} 
+
+.timer {
+    display: inline-block;
+    justify-content: flex-end;
+    color: white;
+}
+
+.start {
+    text-align: center;
+    margin-top: 10px;
+    background: #344BCB;
+    padding: 200px;
+    color: white;
+    font-size: 20px;
+} 
+
+#start {
+    margin-top: 20px;
+    background-color: #CBB434; 
+    color: white;
+    padding: 15px 32px;
+    font-size: 20px;
+    transition-duration: 0.8s;
+}
+
+#start:hover {
+    background-color: white;
+    color: #CBB434;
+}
+
+#questions {
+    text-align: center;
+    margin-top: 10px;
+    background-color: #344BCB;
+    padding: 40px;
+    color: white;
+    font-size: 20px;
+}
