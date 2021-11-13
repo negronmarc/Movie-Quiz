@@ -10,7 +10,7 @@ header {
 }
 
 .scores {
-    display: inline-flex;
+    display: inline;
 }
 
 a {
@@ -19,8 +19,9 @@ a {
 } 
 
 .timer {
-    display: inline-block;
-    justify-content: flex-end;
+    display: inline;
+    right: 0;
+    position: absolute;
     color: white;
 }
 

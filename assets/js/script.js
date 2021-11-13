@@ -87,9 +87,34 @@ function askQuestions() {
     // display question text
     questionsTextEl.textContent = questionTitle;
     // ?? Display choices
+    // Clear the existing choices content
+    choicesEl.innerHTML = '';
+    choiceEl.textContent = '';
+
+    // Create a loop to create list item elements
+    var choicesArr = currentQuestionObj.choices;
+    for (var i = 0; i < choicesArr.length; i++) {
+        var liEl = document.createElement('li');
+    // On each list item add an value attribute to the choice 
+        liEl.setAttribute('value', choicesArr[i]);
+        liEl.textContent = (i + 1) + "." + choicesArr[i];
+        chocies.appendChild(liEl);
+    // add the content to the list item 
+    // append the list item to choices element 
+    }  
 
     // Increment Index for the next question
     quizQuestionsIndex++;
+};
+
+// ?? quizEnd function
+// clear interval
+// display end screen element 
+// add the content to the final-score element with timecount
+// hide questions element
+
+function quizend() {
+    return;
 };
 
 function handleTicks() {
@@ -103,10 +128,32 @@ function handleTicks() {
         console.log("Time is up");
         clearInterval(timerId);
         // ?? quizend
+        quizend();
     }
 };
 
+// ?? handleChoice function
+// get the value attribute from event target
+// compare the value with the current question answer
+// if equal, add content to the feedback element with 'Correct'
+// if not,
+//  subtract seconds from time count as penalty 
+//  if time count less than zero, make it zero
+//  modify the content of the timer element with this new time count
+//  add content to the feedback element with 'Wrong!'
+// display feedback element 
+// set one-time timer to hide the feedback element in 1 ~ 2 secs
+// increment the quiz questions index by 1
+// check if the index is equal to the length (size) of questions 
+// if equal, call quizEnd function
+// if not, call ask questions function
+
 startBtn.addEventListener("click", startQuiz);
+
+// add event listener for choices 
+choicesEl.addEventListener("click", handleChoices)
+
+// ?? add event listener for 
 
 
 
