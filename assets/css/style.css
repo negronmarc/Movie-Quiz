@@ -1,58 +1,130 @@
-.hide {
-    display:none
+body {
+  font-family: Arial;
+  font-size: 120%;
 }
 
 header {
-    background-color: #CBB434;
-    margin-top: 10px;
-    padding: 20px;
-    font-size: 18px;
+  background-color: #cbb434;
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 18px;
 }
 
 .scores {
-    display: inline;
+  padding-left: 1%;
+  text-decoration: none;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-} 
-
 .timer {
-    display: inline;
-    right: 0;
-    position: absolute;
-    color: white;
+  color: white;
 }
 
 .start {
-    text-align: center;
-    margin-top: 10px;
-    background: #344BCB;
-    padding: 200px;
-    color: white;
-    font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  background: #344BCB;
+  padding: 200px;
+  color: white;
+  font-size: 20px;
 } 
 
 #start {
-    margin-top: 20px;
-    background-color: #CBB434; 
-    color: white;
-    padding: 15px 32px;
-    font-size: 20px;
-    transition-duration: 0.8s;
+  margin-top: 20px;
+  background-color: #CBB434; 
+  color: white;
+  padding: 15px 32px;
+  font-size: 20px;
+  transition-duration: 0.8s;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 #start:hover {
-    background-color: white;
-    color: #CBB434;
+  background-color: white;
+  color: #CBB434;
 }
 
 #questions {
-    text-align: center;
-    margin-top: 10px;
-    background-color: #344BCB;
-    padding: 40px;
-    color: white;
-    font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #344BCB;
+  padding: 40px;
+  color: white;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+#end-screen {
+  text-align: center;
+  margin-top: 10px;
+  background-color: #344BCB;
+  padding: 40px;
+  color: white;
+  font-size: 20px;
+}
+
+#submit {
+  background-color: #CBB434; 
+  color: white;
+  padding: 2px;
+  font-size: 20px;
+  transition-duration: 0.8s;
+}
+
+#submit:hover {
+  background-color: white;
+  color: #CBB434;
+}
+
+input[type="text"] {
+  font-size: 100%;
+}
+
+ol {
+  padding-left: 0px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+li {
+  padding: 5px;
+}
+
+li:hover {
+  color: #CBB434;
+}
+
+.wrapper {
+  margin: 100px auto 0 auto;
+  max-width: 600px;
+}
+
+.hide {
+  display: none;
+}
+
+.scores {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.feedback {
+  font-style: italic;
+  font-size: 120%;
+  margin-top: 10px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #CBB434;
+}
+
+.timer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding-right: 1%;
 }

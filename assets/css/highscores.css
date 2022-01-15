@@ -1,0 +1,32 @@
+h1 {
+  background-color: #cbb434;
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 30px;
+  color: white;
+}
+
+#highscores {
+  margin-top: 10px;
+  background: #344bcb;
+  padding: 60px;
+  color: white;
+  font-size: 25px;
+  line-height: 150%;
+}
+
+p {
+  background-color: #cbb434;
+  padding: 10px;
+}
+
+#back {
+  text-decoration: none;
+  color: white;
+  margin-left: 1%;
+  font-size: 20px;
+}
+
+#back:hover {
+  color: #344bcb;
+}
